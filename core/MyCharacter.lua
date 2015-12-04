@@ -35,7 +35,7 @@ return {
 		return GET_TOTAL_MONEY();
 	end,
 
-	getBaseLevel = function()
+	getCharacterLevel = function()
 		return info.GetLevel(session.GetMyHandle());
 	end,
 
@@ -43,15 +43,15 @@ return {
 		return info.GetFamilyName(session.GetMyHandle());
 	end,
 
-	getCurrentBaseExperience = function()
+	getCurrentCharacterExperience = function()
 		return session.GetEXP();
 	end,
 
-	getRequiredBaseExperience = function()
+	getRequiredCharacterExperience = function()
 		return session.GetMaxEXP();
 	end,
 
-	getCurrentBaseExperiencePercent = function()
-		return (getCurrentBaseExperience() / getRequiredBaseExperience()) * 100;
+	getCurrentCharacterExperiencePercent = function()
+		return (getCurrentCharacterExperience() / getRequiredCharacterExperience()) * 100;
 	end
 }
