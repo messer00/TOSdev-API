@@ -1,55 +1,55 @@
 return {
 	getHp = function()
 		return info.GetStat(session.GetMyHandle()).HP;
-	end
+	end,
 
 	getHpMax = function()
 		return info.GetStat(session.GetMyHandle()).maxHP;
-	end
+	end,
 
 	getSp = function()
 		return info.GetStat(session.GetMyHandle()).SP;
-	end
+	end,
 
 	getSpMax = function()
 		return info.GetStat(session.GetMyHandle()).maxSP;
-	end
+	end,
 
 	getStamina = function()
 		return info.GetStat(session.GetMyHandle()).Stamina;
-	end
+	end,
 
 	getStaminaMax = function()
 		return info.GetStat(session.GetMyHandle()).MaxStamina;
-	end
+	end,
 
 	getShield = function()
 		return info.GetStat(session.GetMyHandle()).shield;
-	end
+	end,
 
 	getShieldMax = function()
 		return info.GetStat(session.GetMyHandle()).maxShield;
-	end
+	end,
 
 	getSilver = function()
 		return GET_TOTAL_MONEY();
-	end
+	end,
 
 	getBaseLevel = function()
 		return info.GetLevel(session.GetMyHandle());
-	end
+	end,
 
 	getFamilyName = function()
 		return info.GetFamilyName(session.GetMyHandle());
-	end
+	end,
 
 	getCurrentBaseExperience = function()
 		return session.GetEXP();
-	end
+	end,
 
 	getRequiredBaseExperience = function()
 		return session.GetMaxEXP();
-	end
+	end,
 
 	getCurrentBaseExperiencePercent = function()
 		return (getCurrentBaseExperience() / getRequiredBaseExperience) * 100;
