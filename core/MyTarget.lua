@@ -45,7 +45,7 @@ return {
     return info.GetTargetInfo(session.GetTargetHandle()).distance;
   end,
 
-  isInveincible = function()
+  isInvicible = function()
     return info.GetTargetInfo(session.GetTargetHandle()).isInvicible;
   end,
 
