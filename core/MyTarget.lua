@@ -75,6 +75,18 @@ return {
 
   isDialog = function()
     return info.GetTargetInfo(session.GetTargetHandle()).isDialog;
+  end,
+
+  getTargetInfoHPGuage = function(frame)
+    if targetinfo.isElite == 1 then
+			return GET_CHILD(frame, "elite", "ui::CGauge");
+		else
+			return GET_CHILD(frame, "normal", "ui::CGauge");
+		end
+  end,
+
+  getBaseHPGuage = function(frame)
+    return GET_CHILD(frame, "hp", "ui::CGauge");
   end
   
 }
