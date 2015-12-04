@@ -27,6 +27,54 @@ return {
   end,
 
   isMonster = function()
+  end,
+
+  isBoss = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).isBoss;
+  end,
+
+  isElite = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).isElite;
+  end,
+
+  targetWindow = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).targetWindow;
+  end,
+
+  getDistance = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).distance;
+  end,
+
+  isInveincible = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).isInvicible;
+  end,
+
+  getAttribute = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).attribute;
+  end,
+
+  getArmorType = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).armorType;
+  end,
+
+  getRaceType = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).raceType;
+  end,
+
+  getTargetSize = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).size;
+  end,
+  
+  isQuestMark = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).isQuestMark;
+  end,
+  
+  isSkillObj = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).isSkillObj;
+  end,
+
+  isDialog = function()
+    return info.GetTargetInfo(session.GetTargetHandle()).isDialog;
   end
   
 }
