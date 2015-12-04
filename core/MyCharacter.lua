@@ -52,6 +52,6 @@ return {
 	end,
 
 	getCurrentBaseExperiencePercent = function()
-		return (getCurrentBaseExperience() / getRequiredBaseExperience) * 100;
+		return (getCurrentBaseExperience() / getRequiredBaseExperience()) * 100;
 	end
 }
