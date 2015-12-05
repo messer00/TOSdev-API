@@ -45,7 +45,7 @@ return {
     return info.GetTargetInfo(session.GetTargetHandle()).distance;
   end,
 
-  isInvicible = function()
+  isInvincible = function()
     return info.GetTargetInfo(session.GetTargetHandle()).isInvicible;
   end,
 
@@ -77,7 +77,7 @@ return {
     return info.GetTargetInfo(session.GetTargetHandle()).isDialog;
   end,
 
-  getTargetInfoHPGuage = function(frame)
+  getTargetInfoHPGauge = function(frame)
     if targetinfo.isElite == 1 then
 			return GET_CHILD(frame, "elite", "ui::CGauge");
 		else
@@ -85,7 +85,7 @@ return {
 		end
   end,
 
-  getBaseHPGuage = function(frame)
+  getBaseHPGauge = function(frame)
     return GET_CHILD(frame, "hp", "ui::CGauge");
   end
   
