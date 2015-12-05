@@ -1,0 +1,1 @@
+ui.SysMsg(MyCharacter.getFamilyName() .. " is too cute to be real!")
